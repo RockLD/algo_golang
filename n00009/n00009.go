@@ -16,7 +16,7 @@ package n00009
 	解释：从右向左读, 为 01 。因此它不是一个回文数。
  */
 
- func isPalindrome(x int)bool {
+ func IsPalindrome(x int)bool {
 	 if x<0 || (x %10==0 && x!=0){
 		 return false
 	 }

@@ -7,6 +7,10 @@ package n00206
  *     Next *ListNode
  * }
  */
+ type ListNode struct {
+	 Val int
+	 Next *ListNode
+ }
 func reverseList(head *ListNode) *ListNode {
     cur := head
 
