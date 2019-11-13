@@ -4,12 +4,11 @@ func uniquePaths(m int, n int) int {
 	if m <= 0 || n <= 0 {
 		return 0
 	}
-	// 初始化二维切片
 	dp := make([][]int,m)
 	for i := 0; i < m; i++ {
-		dp[i] = make([]int,n+1)
+		dp[i] = make([]int,n)
 	}
-	// 初始化数据
+
 	for i := 0; i < m; i++ {
 		dp[i][0] = 1
 	}
@@ -23,7 +22,5 @@ func uniquePaths(m int, n int) int {
 			dp[i][j] = dp[i-1][j] + dp[i][j-1]
 		}
 	}
-
 	return dp[m-1][n-1]
-
 }
