@@ -10,5 +10,11 @@ type ListNode struct {
 }
 
 func getDecimalValue(head *ListNode) int {
+	num := 0
+	for head != nil {
+		num = num*2 + head.Val
+		head = head.Next
+	}
+	return num
 
 }
