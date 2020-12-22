@@ -1,10 +1,10 @@
 package n00009
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 )
 
-func TestIsPalindrome(t *testing.T){
+func TestIsPalindrome(t *testing.T) {
 	fmt.Println("test")
 }
